@@ -1,0 +1,9 @@
+.terraform.tfstate.lock.info
+terraform.tfstate.backup
+terraform.tfstate
+sa-private-key.json
+envvars.sh
+start.tpl
+.terraform.lock.hcl
+.terraform
+project_key.txt
