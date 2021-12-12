@@ -42,7 +42,7 @@
       name: git
       state: latest
 
-  - name: Clone master branches rest-api
+  - name: Clone main branch rest-api
     ansible.builtin.git:
       repo: https://github.com/DevOps-Kv-116/rest-api
       dest: /opt/projectIssues/rest-api
@@ -50,7 +50,7 @@
       version: main
     ignore_errors: yes
 
-  - name: Clone master branches rabbit-to-db
+  - name: Clone main branch rabbit-to-db
     ansible.builtin.git:
       repo: https://github.com/DevOps-Kv-116/rabbit-to-db
       dest: /opt/projectIssues/rabbit-to-db
@@ -58,7 +58,7 @@
       version: main
     ignore_errors: yes
 
-  - name: Clone master branches rabbit_to_slack
+  - name: Clone main branch rabbit_to_slack
     ansible.builtin.git:
       repo: https://github.com/DevOps-Kv-116/rabbit_to_slack
       dest: /opt/projectIssues/rabbit_to_slack
@@ -66,7 +66,7 @@
       version: main
     ignore_errors: yes
 
-  - name: Clone develop branches json-filter
+  - name: Clone main branch json-filter
     ansible.builtin.git:
       repo: https://github.com/DevOps-Kv-116/json-filter
       dest: /opt/projectIssues/json-filter
@@ -74,7 +74,7 @@
       version: main
     ignore_errors: yes
 
-  - name: Clone develop branches frontend
+  - name: Clone main branch frontend
     ansible.builtin.git:
       repo: https://github.com/DevOps-Kv-116/frontend
       dest: /opt/projectIssues/frontend
