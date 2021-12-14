@@ -43,9 +43,14 @@ data "template_file" "init" {
   vars = {
     app_ip    = "${google_compute_address.static.address}"
     slack_wh  = var.SLACK_WH
-    sl_channel = var.SLACK_CHANNEL
+    # sl_channel = var.SLACK_CHANNEL
+    SLACK_BUG = var.SLACK_BUG
+    SLACK_US  = var.SLACK_US
+    SLACK_TC  = var.SLACK_TC
   }
 }
+
+
 
 output "app_ip" {
   value = "${google_compute_address.static.address}"

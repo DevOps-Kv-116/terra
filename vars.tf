@@ -40,10 +40,10 @@ variable "SLACK_WH" {
 }
 
 
-variable "SLACK_CHANNEL" {
-  type = string
-  default = ""
-}
+# variable "SLACK_CHANNEL" {
+#   type = string
+#   default = ""
+# }
 
 variable "SSH_USER" {
   type = string
@@ -59,3 +59,19 @@ variable "FULL_PR_KEYS_PATH" {
   type = string
   default = ""
 }
+
+variable "SLACK_BUG" {
+  type = string
+  default = ""
+}
+
+variable "SLACK_US" {
+  type = string
+  default = ""
+}
+
+variable "SLACK_TC" {
+  type = string
+  default = ""
+}
+

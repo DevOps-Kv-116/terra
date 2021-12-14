@@ -29,8 +29,8 @@ Script will create envvars.sh & sa-private-key.json files
 Repo lacks start.tpl file as it is stateful, after adding it to repo folder you are good to go.
 
 	terraform init
-	terraform plan -var-file="vars.tfvars"
-	terraform apply -var-file="vars.tfvars" --auto-approve
+	terraform plan
+	terraform apply --auto-approve
 	terraform destroy --auto-approve
 	terraform destroy -target  google_compute_instance.vm_instance --auto-approve
 ### Magic

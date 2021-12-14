@@ -38,13 +38,6 @@ then
     echo "Missing value!"; exit $ERRCODE;
 fi
 
-echo "Slack channel(can be stated without #, default webtests):"
-read SLACK_CHANNEL
-if [ -z "$SLACK_CHANNEL" ]
-then
-    SLACK_CHANNEL="webtests"
-fi
-
 echo "Billing account(must be stated):"
 read BILLING_ACCOUNT
 if [ -z "$BILLING_ACCOUNT" ]
@@ -160,7 +153,6 @@ export TF_VAR_SA=${SERVICE_ACCOUNT_ID}
 export TF_VAR_ID=${NOTRANDOM}
 export TF_VAR_BILLING_ACC=${BILLING_ACCOUNT}
 export TF_VAR_SLACK_WH=${SLACK_WH}
-export TF_VAR_SLACK_CHANNEL=${SLACK_CHANNEL}
 export TF_VAR_SSH_USER=${SSH_USER}
 export TF_VAR_FULL_PUB_KEYS_PATH=${FULL_PUB_KEYS_PATH}
 export TF_VAR_FULL_PR_KEYS_PATH=${FULL_PR_KEYS_PATH}

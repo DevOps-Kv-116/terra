@@ -1,0 +1,7 @@
+zone        = "europe-central2-a"
+name        = "terraform-app-instance"
+type        = "e2-medium"
+region      = "europe-central2"
+SLACK_BUG   = "bug"
+SLACK_US    = "userstory"
+SLACK_TC    = "testcase"
